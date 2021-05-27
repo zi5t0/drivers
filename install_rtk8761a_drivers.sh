@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# TO-DO: Get distro name and ADD support for differents distros
+#DISTRO=$(lsb_release -i | cut -d ":" -f2 | sed -e 's/\s//g' | sed 's/[A-Z]/\L&/g')
+
 # Installation for Ubuntu
 apt install make gcc build-essential bluez wget unzip linux-headers-$(uname -r)
 # Download file to /tmp
