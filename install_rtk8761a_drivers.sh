@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Installation for Ubuntu
-apt install make gcc build-essential bluez wget
+apt install make gcc build-essential bluez wget unzip linux-headers-$(uname -r)
 # Download file to /tmp
 wget 'https://github.com/zi5t0/drivers/raw/main/drivers_rtk8761a.zip' -O /tmp/drivers_rtk8761a.zip
 # Give permissions to downloaded zip
